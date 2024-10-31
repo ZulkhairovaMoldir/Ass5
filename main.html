@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass5</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h3>Task 1</h3>
+    <label for="a">Enter a:</label>
+    <input type="number" id="a" required>
+    <br>
+    <label for="b">Enter b:</label>
+    <input type="number" id="b" required>
+    <br>
+    <label for="c">Enter c:</label>
+    <input type="number" id="c" required>
+    <br>
+    <button onclick="calculateNearestFarthest()">Calculate Nearest and Farthest</button>
+
+    <p>Nearest to 100: <span id="nearest"></span></p>
+    <p>Farthest from 100: <span id="farthest"></span></p>
+
+    <h3>Task3</h3>
+    <h4>Enter a string:</h4>
+    <input type="text" id="inputString" placeholder="Enter your string here">
+    <button onclick="showFirstNonRepeatingCharacter()">Find First Non-Repeating Character</button>
+
+    <p>First Non-Repeating Character:</p>
+    <p id="result"></p>
+
+    <h3>Task4</h3>
+    <h4>Enter a string:</h4>
+    <input type="text" id="inputString" placeholder="Enter your string here">
+    <button onclick="showMovedString()">Move Characters Forward</button>
+
+    <h3>Task5</h3>
+    <h2>Find Longest and Shortest Words</h2>
+    <button onclick="findLongestAndShortest()">Enter Words</button>
+
+    <h3>Task6</h3>
+    <p id="paragraph">
+        The Document Object Model (DOM) is the data representation of the objects that
+        comprise the structure and content of a document on the web.
+    </p>
+
+    <button onclick="highlightWords()">Highlight Words</button>
+
+    <h3>Task7</h3>
+    <p id="text">
+        Hello! How are you doing today? It's nice to see you here!
+    </p>
+
+    <button onclick="replaceCharacters()">Replace Characters</button>
+
+    <h3>Task8</h3>
+
+    <p id="text">
+        Hello! How are you doing today? I hope you're having a good day. Let's split each sentence onto a new line!
+    </p>
+
+    <button onclick="splitSentences()">Split Sentences</button>
+
+    <h3>Task9</h3>
+    <p id="text">
+        This is a sample paragraph to demonstrate counting the number of words in JavaScript.
+    </p>
+
+    <button onclick="countWords()">Count Words</button>
+
+    <h3>Task10</h3>
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet, any arbitrary array day away to play with artistry.
+    </p>
+
+    <button onclick="highlightWords()">Highlight Words</button>
+
+    <h3>Task11</h3>
+    <label for="radius">Enter Radius:</label>
+    <input type="number" id="radius" placeholder="Radius" required>
+    <button onclick="calculateVolume()">Calculate Volume</button>
+    <p id="result11"></p>
+
+    <h3>Task12</h3>
+    <label for="radius">Enter Radius:</label>
+    <input type="number" id="radius" placeholder="Radius" required>
+
+    <label for="height">Enter Height:</label>
+    <input type="number" id="height" placeholder="Height" required>
+
+    <button onclick="calculateCylinderVolume()">Calculate Volume</button>
+
+    <p id="result12"></p>
+
+    <h3>Task13</h3>
+
+    <label for="radius">Enter Radius:</label>
+    <input type="number" id="radius" placeholder="Radius" required>
+
+    <label for="height">Enter Height:</label>
+    <input type="number" id="height" placeholder="Height" required>
+
+    <button onclick="calculateConeVolume()">Calculate Volume</button>
+
+    <p id="result13"></p>
+
+    <h3>Task14</h3>
+    <label for="sideA">Enter Side A (base width):</label>
+    <input type="number" id="sideA" placeholder="Side A" required>
+
+    <label for="sideB">Enter Side B (base length):</label>
+    <input type="number" id="sideB" placeholder="Side B" required>
+
+    <label for="height">Enter Height:</label>
+    <input type="number" id="height" placeholder="Height" required>
+
+    <button onclick="calculatePrismVolume()">Calculate Volume</button>
+
+    <p id="result14"></p>
+
+    <h3>Task15</h3>
+    <label for="base">Enter Base Length:</label>
+    <input type="number" id="base" placeholder="Base Length" required>
+
+    <label for="height">Enter Height:</label>
+    <input type="number" id="height" placeholder="Height" required>
+
+    <button onclick="calculateTriangleArea()">Calculate Area</button>
+
+    <p id="result15"></p>
+
+    <h3>Task16</h3>
+    <button id="toggle-button">Toggle Sidebar</button>
+    
+    <div class="sidebar" id="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content" id="main-content">
+        <h1>Main Content Area</h1>
+        <p>This is the main content area.</p>
+    </div>
+        <h3>Task17</h3>
+        <div class="calendar-container">
+            <div class="header">
+                <button id="prev">❮</button>
+                <h2 id="month-year"></h2>
+                <button id="next">❯</button>
+            </div>
+            <div class="days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div id="calendar" class="calendar"></div>
+        </div>
+
+        <h3>Task18</h3>
+        <div class="container">
+            <h2>Available Items</h2>
+            <ul id="available-items" class="draggable-list">
+                <li draggable="true">Item 1</li>
+                <li draggable="true">Item 2</li>
+                <li draggable="true">Item 3</li>
+                <li draggable="true">Item 4</li>
+                <li draggable="true">Item 5</li>
+            </ul>
+
+            <h2>Selected Items</h2>
+            <ul id="selected-items" class="draggable-list"></ul>
+        </div>
+
+        <h3>Task19</h3>
+        <div class="game-container">
+            <h1>Rock, Paper, Scissors</h1>
+            <div class="choices">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="result">
+                <p id="user-choice">Your choice: <span></span></p>
+                <p id="computer-choice">Computer choice: <span></span></p>
+                <p id="outcome"></p>
+            </div>
+            <button id="play-again" style="display:none;">Play Again</button>
+        </div>
+
+        <h3>Task20</h3>
+        <div class="clock-container">
+            <h1>Digital Clock</h1>
+            <div id="clock">00:00:00</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
